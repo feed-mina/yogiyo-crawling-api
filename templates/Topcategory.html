@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrap-tabcategory{
+            background: #8927AE;
+            display:flex;
+            justify-content: space-between;
+            height:90px;
+          
+            overflow-x: scroll;
+            overflow-y: clip;
+        }
+        .wrap-tabcategory::-webkit-scrollbar{
+            height: 10px;
+        }
+        .wrap-tabcategory::-webkit-scrollbar-thumb{
+            background-color: #2f3542;
+            border-radius: 10px;
+            background-clip: padding-box;
+            border: 2px solid transparent;
+        }
+ 
+        .wrap-tabcategory::-webkit-scrollbar-track {
+            background-color: grey;
+            border-radius: 10px;
+            box-shadow: inset 0px 0px 5px white;
+          }
+        .tabcategory{
+            margin:0px;
+            padding:0px;
+        }
+        .tabcategory-container{
+            display:flex;
+            align-items: center;
+
+            word-break: keep-all;
+        }
+
+ 
+    .categorytitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+       
+        color:#fff;
+        display: flex;
+ 
+
+    }    
+    .categorylink{
+           
+        text-decoration: none;
+    }
+    .wraplinktabcategory{
+        padding-left: 30px;
+    padding-right: 30px;
+    }
+ 
+    </style>
+    
+    <div class="wrap-tabcategory">
+      <div class="tabcategory-container">
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=1인분주문" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">1인분</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=한식" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">한식</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=일식돈까스" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle"> 일식돈까스</span> </div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=치킨" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">치킨</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=피자양식" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">피자양식</span>
+           </div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=카페디저트" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">카페디저트</span>
+            </div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=야식" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">야식</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+
+        <a href="http://127.0.0.1:5000/2?cal=아시아" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">아시아</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+
+        <a href="http://127.0.0.1:5000/2?cal=프렌차이즈" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">프렌차이즈</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=분식" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">분식</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=테이크아웃" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">테이크아웃</span></div>
+        </a>
+       </div>
+       <div class="wraplinktabcategory">
+        <a href="http://127.0.0.1:5000/2?cal=고기구이" class="categorylink">
+            <div class="tabcategory"><span class="categorytitle">고기구이</span></div>
+        </a>
+       </div>
+      </div>
+    </div>
+</body>
+</html>

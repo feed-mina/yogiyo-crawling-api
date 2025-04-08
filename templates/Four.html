@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+    <!-- <link href="../css/four.css" rel="stylesheet"  >  -->
+    <link href="{{ url_for('static', filename='css/custom_four.css') }}" rel="stylesheet">
+  
+
+
+</head>
+
+<body>
+
+    <!-- <script type="module" src="optionlist3.js"></script> -->
+    <script type="module" src="{{ url_for('static', filename='js/custom_optionlist3.js') }}"> </script>
+ 
+
+<div class="fourwrap">
+    <div class="onemenu">
+        <div class="onemenu_content">
+            <div class="maintitle"></div>
+                <div class="onemenu_layer1">
+                    <storetitle></storetitle>
+                    <foodimg></foodimg>
+                </div>
+
+                 <div class="onefood_button">
+                     <goreview></goreview>
+                      <div id="google_translate_element" class="hd_lang"></div>
+                </div>
+            <choicemenu> </choicemenu>
+
+            <div class="changenum" id="container">
+                <button  class="abutton" id="plus">+</button>
+                <span class="resultElement" id="result">1</span>
+                <button class="abutton" id="minus">-</button>
+    
+            </div>
+            <button class="reset" id="reset">reset</button>
+            <div class="detail-btn-wrap" onclass="get_order_btn_class()">
+                <div class="gobasketwrap">
+                    <menucount></menucount>
+                        <div style=" display: flex; justify-content: space-between; ">            
+                            <gobasket></gobasket>
+                            <button class="btn-order" onclick="checkout()"
+                                ondisabled="!is_enable_status_order()">
+                                주문하기</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+
+    <!-- <script type="text/javascript" src="basket.js"></script>   -->
+    <script type="module" src="{{ url_for('static', filename='js/basket.js') }}"> </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ko',
+                includedLanguages: 'th,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+
+</body>
+
+</html>

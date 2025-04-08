@@ -1,0 +1,438 @@
+.rowline {
+    display: flex;
+}
+
+/* General */
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    font-size: 10px;
+}
+
+
+/* Typography */
+
+h1,
+h2 {
+    font-family: 'Cherry Swash', cursive;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: right;
+
+    position: absolute;
+
+    z-index: 3000;
+
+    line-height: 2rem;
+    padding-top: 0.3rem;
+}
+
+
+
+p,
+label,
+input,
+select,
+button,
+li {
+    font-size: 1.5rem;
+}
+
+li {
+    line-height: 1.5;
+}
+
+/* block styling */
+
+
+
+/* Form styling */
+
+label,
+select,
+input {
+    display: block;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+
+.min_price {
+
+    color: tomato;
+    font-weight: bold;
+}
+
+.reviewavg {
+
+    color: khaki;
+    font-weight: bolder;
+}
+
+.reviewcount {
+
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+
+    border: 1px solid #333;
+    background-color: #fff;
+    position: relative;
+    height: 200px;
+    width: 480px;
+}
+
+.boxwrap {
+
+    width: 480px;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+    background: white;
+}
+
+.imagebox {
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 20px;
+    margin-left: 15px;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.main {
+    margin: 0 auto;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.main-content {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 650px;
+    background: #fff;
+}
+
+.mainhead {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.member {
+    height: 133px;
+
+    background: #8927AE;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.memberimg {
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    margin-left: 27px;
+    margin-right: 42px;
+    border: 1px solid #000000;
+}
+
+.memberinfo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+
+}
+
+#memberid {
+    font-weight: bold;
+}
+
+#memberpoint {
+    color: blue;
+}
+
+#memberclass {
+    padding-left: 5px;
+    color: red;
+}
+
+.formlink {
+    border: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-category {
+    height: 80%;
+
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.Hello {
+    height: 2290px;
+
+}
+
+.Hello_main {
+    margin: 0 auto;
+    width: 480px;
+    height: 2000px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+
+
+}
+
+.Hello_title {
+    width: 100%;
+    height: 57px;
+    background: #FA0C58;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.detailmenu {
+    width: 480px;
+    height: 1313px;
+}
+
+.detailmenu_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintitle {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000000;
+    background: #8927AE;
+
+}
+
+.detailmenu_layer1 {
+    width: 100%;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+    background: white;
+}
+
+.detailmenu_list {
+    width: 100%;
+}
+
+.detailmenu_detial {
+    height: 31px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.storemin {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+
+.textbox {
+    width: 475px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.line2,
+.line3,
+.line4 {
+    display: flex;
+}
+
+.min_price,
+.deliveryfee,
+.distance,
+.reviewavg,
+.reviewcount,
+.deliverytime {
+    font-weight: bold;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.deliveryfee {
+    color: red;
+}
+
+.go_Onemenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.thumbnail {
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 20px;
+}
+
+.buybutton {
+    z-index: 3;
+    width: 110px;
+    height: 110px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+
+}
+
+.deliveryinform {
+    margin-bottom: 15px;
+}
+
+.phoneline,
+.deliveryinput {
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    padding-left: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.deliveryform {
+    padding-top: 10px
+}
+
+.submitbutton {
+    margin: 0 auto;
+    background: #8927AE;
+    border: none;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+}
+
+.choicephoto {
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    padding-left: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.filebox .upload-name {
+    display: inline-block;
+    margin: 0 auto;
+    background: #8927AE;
+    border: none;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}

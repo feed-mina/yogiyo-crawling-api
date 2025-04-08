@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientForm</title>
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Raleway" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/clientForm.css') }}" rel="stylesheet">
+
+ 
+	</head>
+	<body class="is-preload">
+
+	 
+    <div class="main">
+ 
+            <div class="detailmenu_content">
+                <div class="maintitle"></div>
+                
+ 
+                <div>
+                    <div class="deliveryinform">
+                        <h2>배송정보</h2>
+                    </div>
+                    <div>
+                        <form action=" " target="_blank" method="post">
+                            <label for="address"></label><br>
+                            <input type="text" id="address" name="address" value="주소를 입력하세요"><br>
+                            <label for="roomnumber"> </label><br>
+                            <input type="text" id="roomnumber" name="roomnumber" value="방번호"> <br>
+                            <label for="password"> </label><br>
+                            <input type="text" id="password" name="password" value="일층 현관 비밀번호"><br><br>
+                           
+                          </form>
+                    </div>
+                    <div>
+                        <form action="/action_page.php">
+                           
+                            <input type="file" id="photo" name="photo"><br><br>
+                             
+                          </form>
+                    </div>
+                
+                <div>
+                <h2>배달시요청사항</h2> 
+                <form action="">
+                <div>
+                    <input type="radio" id="normal" name="fav_language" value="normal">
+                      <label for="normal">normal</label><br>
+                
+                </div>          
+                <div class="rowline">
+                      <input type="radio" id="bellok" name="fav_language" value="bellok">
+                          <label for="bellok">문 앞에 두고 밸을 눌러주세요</label><br>
+                </div>
+                    <div class="rowline">
+                          <input type="radio" id="doorok" name="fav_language" value="doorok">
+                          <label for="doorok">문 앞에 두고 벨을 눌르지 마세요</label><br><br>
+                    </div>
+                    <div class="rowline">
+                          <input type="radio" id="count" name="fav_language" value="count">
+                          <label for="count">카운터에 맡겨주세요</label><br><br>
+                    </div>
+                    <div class="rowline">
+                          <input type="radio" id="etc" name="fav_language" value="etc">
+                          <label for="etc">기타 (아래에 작성)</label><br><br>
+                    </div>
+                    <div class="rowline">
+                        <form action="" target="_blank" method="post">
+                            <h3>구매자 정보</h3>
+                            <label for="address"></label><br>
+                            <input type="text" id="address" name="address" value="핸드폰 번호를 입력하세요"><br>
+                          </form>
+                    </div>
+                          <input type="submit" value="구매하기" class="submitbutton">
+                        </form> 
+                    </div>
+ </div>
+ 
+
+ 
+            </div>
+        </div>
+
+ 
+  </body>
+</html>

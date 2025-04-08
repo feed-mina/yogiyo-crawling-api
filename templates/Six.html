@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6page</title>
+    <!-- <link href="../css/six.css" rel="stylesheet"  >  -->
+    <link href="{{ url_for('static', filename='css/six.css') }}" rel="stylesheet">
+</head>
+
+
+<div style="width:100%;">
+    <div class="onemenu">
+        <div class="onemenu_content">
+            <div class="maintitle"></div>
+            <div class="onemenu_layer1">
+ 
+            <div class="onemenu_title" >              
+                <option></option>
+            </div>
+         
+            <div class="basketcontainer"> 
+                <basket></basket>
+                <foodpricetotal></foodpricetotal>
+            </div>
+
+                <div class="pricebutton_scope">       
+                    <div class="info_button"
+                        style="">
+
+                        <span style="word-break:keep-all;">
+                            배송비는 대리인이
+                            상품을 배송하기 위해
+                            판매자에게 지불하는 수수료입니다.
+                            저희회사는 주문금액 3000원만 받습니다.
+                        </span>
+                    </div>
+                    <div class="totalbutton"
+                        style="">
+                        <span>구매하기 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="sixapi.js"></script>  
+<script type="text/javascript" src="basket.js"></script>   -->
+    <script src="{{ url_for('static', filename='js/custom_sixapi.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/basket.js') }}"> </script>
+    </body>
+
+</html>

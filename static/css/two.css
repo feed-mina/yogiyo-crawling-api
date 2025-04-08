@@ -1,0 +1,379 @@
+
+
+.min_price {
+
+  color: tomato;
+  font-weight: bold;
+}
+
+.reviewavg {
+
+  color: #F5DA57;
+  font-weight: bolder;
+}
+
+.reviewcount {
+
+  color: #333;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+
+  border: 1px solid #333;
+  background-color: #fff;
+  position: relative;
+  height: 200px;
+   
+}
+
+.boxwrap {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+  background: white;
+}
+
+.imagebox {
+
+  height: 140px;
+ 
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border-radius: 20px;
+  margin-left: 15px;
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+
+}
+
+.main {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.main-content {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.mainhead {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.member {
+  height: 133px;
+
+  background: #8927AE;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+
+.memberimg {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  margin-left: 27px;
+  margin-right: 42px;
+  border: 1px solid #000000;
+}
+
+.memberinfo {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #000000;
+
+}
+
+#memberid {
+  font-weight: bold;
+}
+
+#memberpoint {
+  color: blue;
+}
+
+#memberclass {
+  padding-left: 5px;
+  color: red;
+}
+
+.formlink {
+  border: none;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-category {
+  height: 80%;
+
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.Hello {
+  height: 2290px;
+
+}
+
+.Hello_main {
+  margin: 0 auto;
+   
+  height: 2000px;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+
+
+}
+
+.Hello_title {
+  width: 100%;
+  height: 57px;
+  background: #FA0C58;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.detailmenu {
+   
+  height: 1313px;
+}
+
+.detailmenu_content {
+  /* display: flex; */
+  flex-direction: column;
+ 
+}
+
+.maintitle {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #000000;
+  background: #8927AE;
+
+}
+
+.detailmenu_layer1 {
+  width: 100%;
+  height: 479px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000000;
+  background: white;
+}
+
+.detailmenu_list {
+  width: 100%;
+}
+
+.detailmenu_detial {
+  height: 31px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.storemin {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+
+.tooltipbasketbutton{
+  width: 84px;
+  height: 84px;
+  bottom : 20px;
+  position:fixed;
+  background-color:#28C0BC;
+  z-index:999;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-left: 80%;
+}
+
+.textbox {
+  width: 80%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.line2,
+.line3,
+.line4 {
+  display: flex;
+  
+  white-space: nowrap;
+}
+
+.min_price,
+.deliveryfee,
+.distance,
+.reviewavg,
+.reviewcount,
+.deliverytime {
+  font-weight: bold;
+  margin: 0px;
+  padding-right: 1em;
+  font-size:1em;
+}
+
+.deliverytime,
+.distance{
+  color:#000000;
+
+}
+.deliveryfee {
+  color: red;
+}
+
+.go_Onemenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.thumbnail {
+  width: 8em;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  
+    .headthree {
+      width: 100%;
+    }
+    .tooltipbasketbutton {
+      
+      margin-left: 65%;
+  }
+  
+  }
+  
+.basketicon{
+  background-image: url(../images/basket.png);
+  width:60px;
+  height: 60px;
+  background-size: contain;
+}
+
+ .flotingbasket{
+  position: fixed;
+   
+}
+
+.storetitle{
+  color:#333;
+  font-size: 1.1rem;
+  margin:0px;
+}
+
+ 
+
+.box.vibration {
+  animation: vibration .1s infinite;
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+ 
+ 
+.boxList {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.box:last-child {
+  background: #3dc7f0; 
+}
+
+
+
+ 

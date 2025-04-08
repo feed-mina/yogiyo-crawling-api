@@ -1,0 +1,431 @@
+ 
+html {
+ 
+  background-color: #fff;
+  font-size: 10px;
+}
+
+label,
+select,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ 
+ 
+a {
+  text-decoration-line: none;
+}
+
+ 
+ 
+.infodiv {
+  width: 16em;
+ 
+}
+
+.para2 {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+#slider {
+ 
+  margin: 0 auto;
+}
+
+.reviewdiv {
+  display: flex;
+  white-space: nowrap;
+}
+ 
+
+ 
+.headthree {
+  display: flex;
+ width:80%;
+  margin : 0 auto;
+  height: 25em;
+  padding-bottom:35px;
+  align-items: center;
+    justify-content: space-between;
+
+}
+
+.storediv {
+  position: absolute;
+  white-space: nowrap;
+  margin-top: -5em;
+}
+.para,
+.para4,
+.para3{
+  padding-left: 1rem;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.para,
+.para4{
+  margin:0px;
+}
+
+.para3{
+  color:#333
+}
+ 
+.para5{
+  color:#808080;
+  padding-left: 1em;
+  font-size: 2em;
+  font-weight: 700;
+} 
+.Photomenuhead,
+.Top10menuhead,
+.Onemenuhead,
+.Othermenuhead {
+  width: 100vw;
+  margin: auto;
+}
+
+.Photomenuheading{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #D0A9DE;
+  color:#fff;
+  font-size:2em;
+}
+.Photomenuheadwrap,
+.Top10menuheadwrap,
+.Onemenuheadwrap,
+.Othermenuheadwrap {
+ 
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #D0A9DE;
+  color:#fff;
+  font-size:2em;
+}
+othermenu,
+onemenu,
+top10menu{
+  width:100vw;
+}
+.Photomenuheading {
+  width:100vw;
+}
+.photomenu{
+  display:flex; 
+    height:200px;
+     overflow-x:auto; 
+      overflow-y:hidden; 
+      margin:auto;
+      visibility: inherit;
+    }
+.section_othersgroup {
+  display: flex;
+  border: 1px solid #333;
+  background-color: #fff;
+  position: relative;
+  
+}
+
+ 
+.boxwrap_group {
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  background: white;
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.imagebox_group {
+  width: 10em;
+  height: 10em ;
+  background-repeat: no-repeat;
+  background-size: contain;
+border-radius: 15px;
+}
+
+.boxwrap_photogroup {
+  width: 23em;
+  height: 18.5em;
+  background: #8927AE;
+  border-radius:20px;
+}
+
+
+.imagebox_photogroup {
+  height: 10em;
+  background: #8927AE;
+  border-radius:20px;
+}
+
+.textbox_photogroup {
+ 
+  height: 100px;
+  color: #fff;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index:5;
+  border-radius:20px;
+}
+
+
+.photo_foodname,
+.photo_reviewcount,
+.photo_min_price {
+  margin: 0px;
+  text-align: center;
+}
+
+.textbox_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10em;
+}
+.photo_foodname {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.min_price {
+  color: tomato;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+.foodname {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.reviewcount {
+  color: #333;
+  font-size: 1.5em;
+ 
+}
+
+
+
+.min_price,
+.deliveryfee,
+.distance,
+.reviewavg,
+.reviewcount,
+.deliverytime {
+  font-weight: bold;
+
+}
+
+
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 400px;
+  height: 300px;
+
+  text-align: center;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.English {
+  background: none;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  background-image: url(../IMAGE/Flag_of_the_United_States.png);
+}
+
+.Thailand {
+  border: none;
+  background: none;
+  width: 140px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(../IMAGE/Flag_of_Thailand.png);
+}
+
+.Photogroupimage {
+  width: 100%;
+  height: 100px;
+border-radius: 15px;
+}
+
+.Onegroupimage,
+.Top10groupimage,
+.othersimage {
+  width: 10em;
+  height: 10em;
+  border-radius: 20px;
+}
+
+goreview{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.goreviewbutton{
+  width: 40em;
+  margin-bottom: 50px;
+ 
+  height: 50px;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#333;
+}
+ 
+ 
+.goreviewbutton{
+  width:20em;
+}
+.basketicon{
+  background-image: url(../images/basket.png);
+  width:60px;
+  height: 60px;
+  background-size: contain;
+}
+
+.tooltipbasketbutton{
+  width: 84px;
+  height: 84px;
+  bottom : 20px;
+  position:fixed;
+  background-color:#28C0BC;
+  z-index:999;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-left: 80%;
+}
+ .flotingbasket{
+  position: fixed;
+   
+}
+
+
+.goog-te-gadget-icon {
+    display: none;
+}
+
+box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#\:0\.targetLanguage>span {
+    padding-top: 10px;
+    padding-bottom:10px;
+    background: #D0A9DE;
+    color: #fff;
+    font-size: 2em;
+    border: none;
+    font-weight: bold;
+    border-radius: 1em;
+    position: absolute;
+  }
+
+@media screen and (max-width: 480px) {
+ 
+#\:0\.targetLanguage>span {
+ margin-top:1em;
+}
+ 
+  .headthree {
+    width: 100%;
+  }
+  .tooltipbasketbutton {
+    
+    margin-left: 65%;
+}
+
+}
+
+.goog-te-gadget-simple{
+    width: 12em;
+    height: 75px;
+    background: #D0A9DE;
+    display: flex;
+    white-space: nowrap;
+    border: none !important; 
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+}

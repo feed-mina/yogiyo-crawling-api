@@ -1,0 +1,12 @@
+.Photomenu {
+    position: relative;
+    
+    margin: 0 auto;
+    height: 200px;
+    overflow: hidden;
+}
+
+ 
+li {
+    list-style: none;
+}

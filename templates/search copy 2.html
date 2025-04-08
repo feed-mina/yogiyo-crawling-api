@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Search Field</h2>
+<style>
+  ul>li{display: inline-block;}
+</style>
+
+...
+<div id="gallery">
+  <div class="header">
+      <h1>Search</h1>
+      <input type="text" id="value" placeholder="Type to Search">
+      <button>클릭</button>
+    </div>
+  <figure>
+    <ul class="nospace clear">
+      <li class="one_quarter first 가가"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">가가가</p></a></li>
+      <li class="one_quarter 나나"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">나나</p></a></li>
+      <li class="one_quarter 다다"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">다라라라</p></a></li>
+      <li class="one_quarter 라라라"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라라라</p></a></li>
+      <li class="one_quarter first 라라다라"><a href="#"><img src="http://placehold.it/150x150" alt=""></a><p class="name">라라다라</p></li>
+      <li class="one_quarter 라라바바"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라라바바</p></a></li>
+      <li class="one_quarter 가가라라"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라라라라</p></a></li>
+      <li class="one_quarter 마마"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라라라라라</p></a></li>
+      <li class="one_quarter first 마마마"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">마라라마</p></a></li>
+      <li class="one_quarter 마바마마"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">마바마마</p></a></li>
+      <li class="one_quarter 라바바"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라바바</p></a></li>
+      <li class="one_quarter 라라바바"><a href="#"><img src="http://placehold.it/150x150" alt=""><p class="name">라라바바</p></a></li>
+    </ul>
+  </figure>
+</div>
+<script>
+  button = document.querySelector('button');
+  input = document.getElementById('value')
+  
+  // 클릭,엔터키 이벤트 
+  input.focus()
+  input.addEventListener('keydown',function(e){
+      if(e.key === "Enter"){
+        Filter();
+      }
+  })
+  button.addEventListener('click',Filter);
+  
+  function Filter(){
+      var value , item , name
+      
+      value = document.getElementById('value').value.toUpperCase();
+      item = document.getElementsByClassName('one_quarter')
+      
+    //indexOf()를 활용한 검색기능 구현
+    for(i=0;i<item.length;i++){
+        name = item[i].getElementsByClassName("name");
+        if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+          item[i].style.display = "inline-block";
+        }else{
+          item[i].style.display = "none";
+        }
+      }
+         
+      
+  }  // Filter 함수 끝
+</script>
+</body>
+</html>

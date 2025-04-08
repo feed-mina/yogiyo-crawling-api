@@ -1,0 +1,194 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1040px;
+  min-width: 320px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.store {
+  margin: 0 auto;
+  height: 2290px;
+  width: 650px;
+}
+
+.store_main {
+  width: 100%;
+  height: 2000px;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+
+
+}
+
+.store_title {
+  width: 100%;
+
+  background: #8927AE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+.storecategory_list {
+  width: 80%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding-left: 10px;
+
+  background-image: url(../IMAGE/M_tic.png );
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+}
+
+.menubox_scope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menubox_list {
+  margin-top: 1em;
+  width: 100%;
+  height: 120px;
+  border: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe_shopdetail {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menulist_title {
+  height: 88px;
+
+  background: #8927AE;
+  font-size: 120%;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.thumbnail_shop {
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  border: none;
+  background: #E5E5E5;
+  background-image: url(../IMAGE/icon_market.png );
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 1em;
+}
+
+
+.delivery_money,
+.delivery_minutes,
+.review_count,
+.delivery_minutes {
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+
+  color: #808080;
+}
+
+.star {
+  color: #FF8A00;
+}
+
+.thumbtext {
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  color: #fa0050
+}
+
+.gostore:link,
+.gostore:visited {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+
+}
+
+.delivery_minutes {
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  color: #808080;
+  list-style: none;
+  margin-top: 15px;
+  position: right bottom;
+}
+
+.gostore:hover,
+.gostore:active {
+  background-color: green;
+  color: white;
+}
+
+.footer {
+  background: #FBFBFB;
+  margin: 0 auto;
+
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+  width: 650px;
+  height: 150px;
+  border: 1px solid #E9E9E9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_menu {
+  background: #FBFBFB;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.footer_oneline,
+.footer_twoline {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  text-transform: nowrap;
+  margin-left: -30px;
+}
+
+li {
+  list-style: none;
+  padding: 15px 0 13px 0;
+}

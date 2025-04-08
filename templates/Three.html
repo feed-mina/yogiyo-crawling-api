@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Three</title>
+
+    <!-- <link href="../css/three.css" rel="stylesheet"  >  -->
+    <link href="{{ url_for('static', filename='css/three.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+        <!-- <script src="storeinfo2.js"></script> -->
+        <script type="module" src="{{ url_for('static', filename='js/storeinfo2.js') }}"> </script>
+
+ 
+        <script type="module" src="{{ url_for('static', filename='js/Photolist.js') }}"> </script>
+     
+    <script type="module" src="{{ url_for('static', filename='js/Top10list.js') }}" > </script>
+     
+    <script type="module" src="{{ url_for('static', filename='js/Onelist.js') }}" > </script>
+     
+    <script type="module" src="{{ url_for('static', filename='js/Otherlist.js') }}" > </script>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#slider").load("http://127.0.0.1:5000/20");
+        });
+    </script>
+
+    <div style="width:100%;">
+        <div class="headthree">
+            <div class="storeinfowrap">
+   
+                <storeinfo></storeinfo>
+            </div> 
+            <div id="google_translate_element" class="hd_lang"></div>
+        </div>   
+        <div>
+            <goreview></goreview>
+       </div>
+        <div id="slider"></div>
+        <div class="menucategory_wrap">
+            <Top10menuhead></Top10menuhead>
+            <Top10menu></Top10menu>
+            <Onemenuhead></Onemenuhead>
+            <Onemenu></Onemenu>
+            <Othermenuhead></Othermenuhead>
+            <Othermenu></Othermenu>
+        </div>
+            
+        <script>
+            const vibration = (target) => {
+              target.classList.add("vibration");
+            
+              setTimeout(function() {
+                target.classList.remove("vibration");
+              }, 400);
+            }
+          </script>
+          <script>
+
+            const foodname = window.sessionStorage.getItem('foodname');
+            console.log(foodname);
+        if(foodname !=null && foodname != undefined ){
+        <a href='http://127.0.0.1:5000/6'>
+            <div class="tooltipbasketbutton">
+                <div class="boxList">
+                    <div class="box" onclick="vibration(this)"> 
+                    <div class="basketicon" ></div>
+                    </div>
+                </div>
+            </div>     
+        </a>
+  
+}
+</script>
+</div>
+ 
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'ko',
+            includedLanguages: 'th,en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+</body>
+
+</html>

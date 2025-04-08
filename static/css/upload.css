@@ -1,0 +1,125 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1040px;
+    min-width: 320px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+
+.store_main {
+    width: 649px;
+    height: 2000px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+
+
+}
+
+.store_title {
+    width: 100%;
+
+    background: #8927AE;
+    height: 76px;
+
+    border: 1px solid #000000;
+
+}
+
+.uploadform {
+    width: 649px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.uploadsection1 {
+    display: flex;
+    margin-top: 96px;
+    flex-direction: column;
+    width: 649px;
+
+    background: #fff;
+    height: 505px;
+}
+
+.uploadsection1-1 {
+    display: flex;
+
+    flex-direction: column;
+    width: 649px;
+    align-items: center;
+    background: #fff;
+
+}
+
+.uploadsection2 {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 649px;
+
+    background: #fff;
+    height: 505px;
+}
+
+.uploadsection2-1 {
+    display: flex;
+    width: 649px;
+    margin-left: 50px;
+}
+
+
+.section1 {
+    width: 80%;
+    height: 87px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.section2 {
+    width: 80%;
+    height: 87px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+
+}
+
+.uploadsection2_title,
+.uploadsection1_title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.label1 {
+    padding-left: 50px;
+}
+
+.upload_footer {
+    width: 649px;
+    height: 124px;
+    background: #8927AE;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+}
+
+.buy {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}

@@ -1,0 +1,552 @@
+a {
+    text-decoration-line: none;
+}
+
+html {
+ 
+    background-color: #fff;
+    font-size: 10px;
+  }
+  
+   
+  .foodname{
+    font-size: 2.5rem;
+  }
+  
+  li {
+    line-height: 1.5;
+  }
+  
+  /* block styling */
+  
+  
+  
+  /* Form styling */
+  
+  label,
+  select,
+  input {
+    display: block;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+   
+  /* Styling the products */
+  .onemenu_content{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.maintitle{
+    width: 100%;
+height: 88px;
+border: 1px solid #000000;
+background: #8927AE;
+ 
+}
+.checkoption{
+    display:none;
+}
+ 
+
+.choicetitlewrap{
+    font-weight: 800;
+}
+
+.para_choice{
+    font-size: 20px;
+}
+
+.foodimg{
+    height:300px;
+    background:#fff;
+  
+    width:100%;
+}
+.onemenu_layer1{
+    width:100%;
+    height:525px;
+    background:#fff;
+  
+}
+
+.onemenu_title{
+    width:100%;
+    height:110px;
+    font-size:50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.onefood_button{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.onefood_reviewbutton{
+    background:#D0A9DE;  color:#fff; font-size:40px; border:none; font-weight:bold; height:77px;
+    border-radius: 10px;
+    width:40%;
+}
+
+.onefood_transbutton{
+    background:#D0A9DE;  color:#fff; font-size:40px; border:none; font-weight:bold; height:77px;
+    border-radius: 10px;
+    width:40%;
+}
+.choicetitlewrap,
+.choicetitle{
+    border : 1px solid #333;
+}
+.choiceparawrap{
+  padding-left:5%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.go_review{
+    color : #fff;
+}
+
+.wrap_optionlabel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ padding:10px;
+}
+.wrap_optionlabelinput{
+    display: flex;
+
+}
+
+.subchoicesname{
+    padding-left:10px;
+}
+
+ 
+.detail-btn-wrap {
+    position: fixed;
+    bottom: 0;
+    
+    z-index: 2;
+}
+
+  .btn-add-cart {
+    background: #555;
+    color: #fff;
+}
+.pricebuttonname{
+    width: 8em;
+    height:2em;
+    font-size:20px;
+}
+.priceupdown{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.detail-btn-wrap button {    
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 4px;
+    margin: 0;
+}
+ .btn-order {
+
+    background: #fa0050;
+    color: #fff;
+    width: 50vw;
+}
+
+
+
+.modal.show {
+    display: block;
+  }
+  
+  .modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 25em;
+    height: 300px;
+   
+    text-align: center;
+  
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .English{
+    background: none;
+    width:10em;
+    height:150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    
+    background-image: url(../IMAGE/Flag_of_the_United_States.png);
+  }
+  
+  .Thailand{
+    border: none;
+    background: none;
+    width:140px;
+    height:140px;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    background-image: url(../IMAGE/Flag_of_Thailand.png);
+  }
+.storetitle{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.basketdiv {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    float: left;
+    font-size: 0.9375em;
+    margin-bottom: 20px;
+}
+    .basketdiv .row.head {
+        border-bottom: 2px solid #888;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+        font-weight: 500;
+    }
+    .basketdiv .data {
+        border-bottom: 1px dashed #888;
+        box-sizing: border-box;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+    }
+    .basketdiv .data .empty{
+        text-align: center;
+        padding: 12px 0;
+    }
+    .basketdiv .row.head .subdiv {
+        background-color: #f4f4f4;
+    }
+    .basketdiv .row > .subdiv {
+        display: block;
+        float: left;
+    }
+    .basketdiv .row > .subdiv:nth-child(1) {
+        width: 50%;
+    }
+    .basketdiv .row > .subdiv:nth-child(2) {
+        width: 40%;
+    }
+    .basketdiv .row > .subdiv:nth-child(3) {
+        width: 10%;
+    }
+    .basketdiv2 .row > .subdiv:nth-child(1) {
+        width: 60%;
+    }
+    .basketdiv2 .row > .subdiv:nth-child(2) {
+        width: 40%;
+    }
+    .basketdiv .row > div > div {
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 0;
+        padding: 12px 0;
+    }
+    .basketdiv .row.data > div > div {
+        height: 60px;
+        line-height: 60px;
+    }
+        .basketdiv .data .num .updown {
+            color: #0075ff;
+            font-size: 2em;
+            letter-spacing: -5px;
+        }
+        .basketdiv .check {
+            width: 10%;
+        }
+    .basketdiv .check input[type=checkbox] {
+        transform: scale(1.5);
+    }
+    .basketdiv .img{
+        width: 20%;
+    }
+    .basketdiv .pname{
+        width: 70%;
+    }
+    .basketdiv2 .pname {
+        width: 80%;
+    }
+    .basketdiv .basketprice {
+        width: 33%;
+    }
+    .basketdiv .num {
+        width: 33%;
+      min-width: 105px;
+    }
+    .basketdiv .sum {
+        width: 34%;
+      max-width: 80px;
+        color: #0000aa;
+    }
+    .basketdiv .point {
+        width: 50%;
+    }
+    .basketdiv2 .basketprice {
+        width: 25%;
+    }
+
+    .basketdiv2 .num {
+        width: 25%;
+    }
+
+    .basketdiv2 .sum {
+        width: 25%;
+        color: #0000aa;
+    }
+
+    .basketdiv2 .point {
+        width: 25%;
+    }
+    .basketdiv .basketcmd{
+        width: 100%;
+    }
+    .basketdiv .data .pname {
+        text-align: left !important;
+      line-height: 1.2 !important;
+    }
+    .basketdiv .data .price, .basketdiv .data .sum, .basketdiv .data .point {
+        text-align: right;
+    }
+    .baseform > tbody > tr > td:first-child {
+        width: 100px;
+    }
+
+.buttongroup {
+    padding: 11px 0;
+    margin: 50px 0;
+}
+.narrowbuttongroup{
+    margin: 15px 0;
+}
+    .buttongroup.center {
+        text-align: center;
+    }
+    .buttongroup input[type=text], .buttongroup input[type=password] {
+        height: 30px;
+    }
+    .buttongroup button, .buttongroup a {
+        margin-right: 5px;
+    }
+        .buttongroup button:last-child, .buttongroup a:last-child {
+            margin-right: 0;
+        }
+.changenum{
+ 
+    margin: 0 auto;
+    bottom: 40px;
+    display: flex;
+}
+
+.resultElement{
+    width: 5em ;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+    .abutton, .abutton:link, .abutton:visited, .abutton:active, input[type=button] {
+        background-color: #383838;
+        border: 1px solid #888888;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: -1px;
+        padding: 10px;
+         margin:0px;
+        width: auto;
+        word-break: keep-all;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+.abutton-alt {
+    background-color: #d3e2c6;
+}
+
+.red {
+    color:#b00;
+}
+.blue {
+  color: #0075ff;
+}
+.basketrowcmd, .sumcount, .summoney{
+  text-align: right;
+  margin-bottom: 10px;
+}
+.sumcount, .summoney{
+  font-size: 1.25em;
+    font-weight: bold;
+}
+.buttongroup{
+  text-align: center;
+}
+.buttongroup a{
+  text-decoration: none;
+}
+.cmd a, .cmd span {
+    padding: 12px 30px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000;
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.cmd.small a, .cmd.small span {
+    padding: 6px 20px;
+    font-size: 0.8125em;
+}
+
+.orderform .p_num {
+    text-align: right;
+    width: 40px;
+    font-size: 1em;
+}
+
+
+.foodname{
+ 
+    text-align: center;
+}
+
+.checkoption{
+    float: left;
+ 
+    height: 48px;
+}
+.goreviewdiv,
+.reviewgobutton,
+.goreview{
+    width: 200px;
+    height: 65px;
+    border-radius: 20px;
+    background:#D0A9DE;  color:#fff; font-size:40px; border:none; font-weight:bold; 
+    text-align: center;
+}
+.gobaskethref,
+.gobasket{
+    height: 50px;
+    background-color:#333;
+  
+
+}
+.goreview{
+    display: none;
+}
+
+.gobasketbutton2,
+.gobasketbutton{
+    height:50px;
+    background-color: #333;
+    width: 50vw;
+     
+}
+
+
+.gobasketwrap {
+    display: flex;
+}
+
+.goog-te-gadget-simple,
+.skiptranslate goog-te-gadget {
+    width: 200px;
+    height: 75px;
+    background: #D0A9DE;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.goog-te-gadget-icon {
+    display: none;
+}
+
+
+#\:0\.targetLanguage>span {
+ 
+    padding-top:10px;
+    padding-bottom:10px;
+    background: #D0A9DE;
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+.goog-te-gadget-simple {
+ 
+    height: 75px;
+    background: #D0A9DE;
+    display: flex;
+    white-space: nowrap;
+    border: none !important; 
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+ .reset{
+    display:none;
+ }
+.changenum{
+  padding-bottom:5em;
+}
+

@@ -1,0 +1,158 @@
+a {
+    text-decoration-line: none;
+}
+
+body {
+    width: 100vw;
+}
+
+.Bag {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.Bag_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintitle {
+    width: 100%;
+    height: 88px;
+    border: 1px solid #000000;
+    background: #8927AE;
+
+}
+
+.Bag_layer1 {
+    width: 100%;
+
+    background: #fff;
+    border: 1px solid #333;
+}
+
+.BigBag {
+    width: 100%;
+    margin-top: 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bag1wrap,
+.Bag2wrap,
+.Bag3wrap,
+.Bag4wrap,
+.Bag5wrap {
+    width: 80%;
+    border-radius: 10px;
+    height: 150px;
+
+
+}
+
+
+.Bag1,
+.Bag2,
+.Bag3,
+.Bag4,
+.Bag5 {
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 58px;
+    /* identical to box height */
+    padding-left: 30px;
+    color: #000000;
+    background: #EBEBEB;
+}
+
+.Bag1text,
+.Bag2text,
+.Bag3text,
+.Bag4text,
+.Bag5text {
+    color: #616161;
+    height: 60px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 58px;
+
+}
+
+.Bagline1 {
+    margin-top: 25px;
+    border: 1px solid #000000;
+    width: 80%;
+}
+
+.Bag_foodimage {
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 80%;
+    height: 175px;
+    border: 1px solid #000000;
+}
+
+.Bag_foodinfo {
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 80%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menuinfo1,
+.menuinfo2,
+.menuinfo3,
+.menuinfo4,
+.menuinfo5 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+
+.price_foodinfo {
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 80%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.priceinfo1,
+.priceinfo2,
+.priceinfo3,
+.priceinfo4,
+.priceinfo5 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
