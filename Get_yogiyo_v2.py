@@ -59,7 +59,7 @@ def get_user_info(access_token):
 
 def get_restaurants(lat, lng, page=0):
     url = (
-        f"https://www.yogiyo.co.kr/api/v2/restaurants"
+        f"https://www.yogiyo.co.kr/api/v1/restaurants"
         f"?items=60&lat={lat}&lng={lng}&order=rank&page={page}&serving_type=delivery"
     )
     response = requests.get(url, headers=HEADERS)
@@ -72,7 +72,7 @@ def get_restaurants(lat, lng, page=0):
 
 # 6. 특정 식당 상세정보
 def get_restaurant_info(restaurant_id, lat, lng):
-    url = f"https://www.yogiyo.co.kr/api/v2/restaurants/{restaurant_id}?lat={lat}&lng={lng}&serving_type=delivery"
+    url = f"https://www.yogiyo.co.kr/api/v1/restaurants/{restaurant_id}?lat={lat}&lng={lng}&serving_type=delivery"
     response = requests.get(url, headers=HEADERS)
     if response.status_code == 200:
         return response.json()

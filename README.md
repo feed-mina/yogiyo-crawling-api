@@ -8,7 +8,7 @@
 1. 토큰 발급 → `/v1/customers`, `/auth/authorize`
 2. 사용자 정보 확인 → `/v1/aggregation/user_info`
 3. 배달 가능 여부 → `/api/v1/geo-restaurants-available`
-4. 음식점 목록 → `/api/v2/restaurants`
+4. 음식점 목록 → `/api/v1/restaurants`
 5. 메뉴 및 리뷰 정보 조회 → `/menu`, `/reviews`
 
 

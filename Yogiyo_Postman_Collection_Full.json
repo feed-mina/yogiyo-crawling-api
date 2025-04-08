@@ -142,6 +142,10 @@
         "method": "GET",
         "header": [
           {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
             "key": "x-apikey",
             "value": "iphoneap"
           },
@@ -151,7 +155,7 @@
           }
         ],
         "url": {
-          "raw": "https://www.yogiyo.co.kr/api/v2/restaurants?lat={{lat}}&lng={{lng}}&page=0&serving_type=delivery",
+          "raw": "https://www.yogiyo.co.kr/api/v1/restaurants?lat={{lat}}&lng={{lng}}&page=0&serving_type=delivery",
           "protocol": "https",
           "host": [
             "www",
