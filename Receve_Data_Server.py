@@ -1,15 +1,28 @@
+#from Get_yogiyo import *
 from flask import Flask, jsonify, make_response, flash, request, redirect, render_template, url_for
-# from Get_yogiyo import *
-from Get_yogiyo_v2 import get_restaurants
 
 from flask_cors import CORS
 import json
+
+from Get_yogiyo_v2 import (
+    get_authorization_code,
+    get_access_token,
+    check_geo_available,
+    get_user_info,
+    get_restaurants,
+    get_menu,
+    get_review,
+    Search_Category,
+    get_Yogiyo
+)
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 CORS(app)
 
-ACCESS_TOKEN = get_access_token()  # 실행 시 자동으로 토큰 발급
+
+code = get_authorization_code()
+ACCESS_TOKEN = get_access_token(code) if code else None # 실행 시 자동으로 토큰 발급
 
 @app.route('/12')
 def hello_world():
