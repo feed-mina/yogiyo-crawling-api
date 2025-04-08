@@ -95,5 +95,8 @@ fastfood_2-master
  📄 HTML 파일들
 
 
-🧪 Postman 테스트
-컬렉션 파일: Yogiyo_API_Test.postman_collection.json 을 Postman에 Import 하세요.
+
+### 🔧 사용 팁
+- Postman에서 Import > File로 이 JSON 파일을 불러와 주세요.
+- access_token, restaurant_id, lat, lng 변수는 Postman 환경 변수로 자동 인식됩니다.
+- 토큰이 필요한 요청에는 공통 헤더(Authorization, x-apikey, x-apisecret)가 들어가도록 되어 있어요.
